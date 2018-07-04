@@ -1,4 +1,5 @@
 package com.erkanerturk.datastructures.binary_search_tree;
+
 import java.util.NoSuchElementException;
 
 public class BinarySearchTree<T extends Comparable<T>> {
@@ -127,6 +128,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 		}
 		if (find(data)) {
 			root = delete(root, data);
+			size--;
 			return true;
 		}
 		return false;
